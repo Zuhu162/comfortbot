@@ -1,6 +1,19 @@
+I'll edit the README to include information about the screenshots and add a setup guide for OpenRouter API keys. Here's the updated version:
+
 # ComfortBot: Islamic Guidance & Comfort
 
 ComfortBot is an AI-powered chat application that provides comfort, guidance, and wisdom based on Islamic teachings. The application responds to users' emotional needs and concerns by sharing relevant Hadiths, Quranic verses, and spiritual advice.
+
+## Screenshots
+
+![ComfortBot Main Interface](public/ss1.png)
+_ComfortBot's main chat interface showing conversation with Islamic guidance_
+
+![ComfortBot Mobile View](public/ss2.png)
+_Responsive mobile view of ComfortBot with example conversation_
+
+![ComfortBot Hadith Reference](public/ss3.png)
+_Example of ComfortBot providing a Hadith with proper citation and reference_
 
 ## Features
 
@@ -18,6 +31,26 @@ The application is built using:
 - Tailwind CSS for styling
 - Shadcn UI component library
 - OpenRouter API with DeepSeek model for AI responses
+
+## Setup Guide
+
+1. Clone the repository
+2. Install dependencies
+   ```
+   npm install
+   ```
+3. Set up your OpenRouter API key:
+   - Visit https://openrouter.ai/ and create an account
+   - Generate a new API key from your dashboard
+   - Create a `.env` file in the root directory with:
+     ```
+     OPENROUTER_API_KEY=your_api_key_here
+     NEXT_PUBLIC_OPENROUTER_API_KEY=your_api_key_here
+     ```
+4. Start the development server
+   ```
+   npm run dev
+   ```
 
 ## Usage Guide
 
@@ -89,7 +122,3 @@ The AI is guided by a carefully crafted system prompt that instructs it to:
 ## License
 
 This project is open source and available under the MIT License.
-
-Can you edit this readme to include 3 screenshots of the site stored in public folder named ss1.png , ss2.png and ss3.png
-
-Also give them a guide on how to setup the project by adding api keys to env from https://openrouter.ai/
