@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 215 65% 45%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 215 10% 92%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 215 10% 92%;
+    --muted-foreground: 215 25% 40%;
+
+    --accent: 174 60% 45%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 16% 88%;
+    --input: 215 16% 88%;
+    --ring: 215 65% 45%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 215 65% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 174 60% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 215 65% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  .hadith-text {
+    @apply font-serif text-comfort-700 italic leading-relaxed;
+  }
+
+  .hadith-source {
+    @apply text-comfort-500 text-sm font-medium;
+  }
+
+  .hadith-container {
+    @apply relative p-6 rounded-xl bg-white bg-opacity-50 backdrop-blur-sm shadow-sm border border-comfort-200;
+  }
+
+  .hadith-container::before {
+    content: '"';
+    @apply absolute top-2 left-3 text-6xl text-comfort-200 font-serif opacity-50;
+  }
+
+  .glass-morph {
+    @apply bg-white bg-opacity-60 backdrop-blur-md border border-white border-opacity-40 shadow-sm;
+  }
+
+  .neomorph {
+    @apply bg-comfort-50 shadow-[8px_8px_16px_0px_rgba(190,206,222,0.6),-8px_-8px_16px_0px_rgba(255,255,255,0.8)];
+  }
+
+  /* Elegant scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-comfort-200 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-comfort-300;
+  }
+
+  /* Custom animations */
+  .typing-indicator {
+    @apply inline-flex;
+  }
+  
+  .typing-indicator span {
+    @apply w-1.5 h-1.5 bg-comfort-400 rounded-full mx-0.5;
+    animation: bounce 1.4s infinite ease-in-out both;
+  }
+  
+  .typing-indicator span:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  .typing-indicator span:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% { 
+      transform: scale(0);
+    } 40% { 
+      transform: scale(1.0);
+    }
+  }
+}
