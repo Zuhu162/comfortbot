@@ -1,6 +1,6 @@
 // API integration with OpenRouter for the DeepSeek model
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
-const API_URL = "https://openrouter.ai/api/v1/chat/completions";
+const OPENROUTER_API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
+const API_URL = import.meta.env.VITE_API_URL;
 
 interface Message {
   role: "user" | "assistant" | "system";
