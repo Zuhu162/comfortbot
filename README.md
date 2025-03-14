@@ -6,13 +6,13 @@ ComfortBot is an AI-powered chat application that provides comfort, guidance, an
 
 ## Screenshots
 
-![ComfortBot Main Interface](public/ss1.png)
+![ComfortBot Main Interface](public/readme/ss1.png)
 _ComfortBot's main chat interface showing conversation with Islamic guidance_
 
-![ComfortBot Mobile View](public/ss2.png)
+![ComfortBot Mobile View](public/readme/ss2.png)
 _Responsive mobile view of ComfortBot with example conversation_
 
-![ComfortBot Hadith Reference](public/ss3.png)
+![ComfortBot Hadith Reference](public/readme/ss3.png)
 _Example of ComfortBot providing a Hadith with proper citation and reference_
 
 ## Features
