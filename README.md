@@ -1,4 +1,3 @@
-
 # ComfortBot: Islamic Guidance & Comfort
 
 ComfortBot is an AI-powered chat application that provides comfort, guidance, and wisdom based on Islamic teachings. The application responds to users' emotional needs and concerns by sharing relevant Hadiths, Quranic verses, and spiritual advice.
@@ -14,6 +13,7 @@ ComfortBot is an AI-powered chat application that provides comfort, guidance, an
 ## Technical Implementation
 
 The application is built using:
+
 - React & TypeScript
 - Tailwind CSS for styling
 - Shadcn UI component library
@@ -55,18 +55,22 @@ The AI is guided by a carefully crafted system prompt that instructs it to:
 ### Challenges Faced
 
 1. **Response Formatting Issues**:
+
    - The AI model occasionally included syntax artifacts like escaped braces (`\{`, `\}`) and formatting commands (`\boxed{}`) in its responses
    - Solution: Enhanced text cleaning in both the ChatMessage component and parseAIResponse utility function
 
 2. **Parsing Complex Responses**:
+
    - Extracting the different parts of the response (message, hadith, source, link, closing) required careful regex pattern matching
    - Solution: Improved the pattern matching logic and added additional cleanup steps
 
 3. **Layout and Presentation**:
+
    - Designing a clear separation between user messages, AI messages, and quoted hadiths
    - Solution: Custom styling with distinct visual elements for each component (bubbles, borders, colors)
 
 4. **Responsive Design**:
+
    - Ensuring readability on all device sizes
    - Solution: Tailwind CSS responsive classes and careful component sizing
 
@@ -85,3 +89,7 @@ The AI is guided by a carefully crafted system prompt that instructs it to:
 ## License
 
 This project is open source and available under the MIT License.
+
+Can you edit this readme to include 3 screenshots of the site stored in public folder named ss1.png , ss2.png and ss3.png
+
+Also give them a guide on how to setup the project by adding api keys to env from https://openrouter.ai/
